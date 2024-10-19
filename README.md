@@ -99,11 +99,11 @@ Run the following SQL command to verify that the Performance Schema is enabled:
 
 If it is enabled, you should see:
 
-+-------------------+-------+
-| Variable_name     | Value |  
-+-------------------+-------+
-| performance_schema | ON    |  
-+-------------------+-------+
++-------------------+-------+  
+| Variable_name     | Value |    
++-------------------+-------+  
+| performance_schema | ON    |    
++-------------------+-------+  
 Using Performance Schema  
 Once enabled, you can start using the Performance Schema to monitor various aspects of the database. You can query different tables within the performance_schema database to get insights into wait events, query performance, and more.  
 
