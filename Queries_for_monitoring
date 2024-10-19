@@ -1,0 +1,15 @@
+--Monitoring Wait Events- To see the summary of wait events in your database:  
+'''
+SELECT *
+FROM performance_schema.events_waits_summary_global_by_event_name
+ORDER BY SUM_TIMER_WAIT DESC
+LIMIT 10;
+'''
+
+--Monitoring SQL Statement Execution - To see how long different SQL statements take to execute, analyze their total execution time, average time, and count.  
+'''
+SELECT *
+FROM performance_schema.events_statements_summary_global_by_event_name
+ORDER BY COUNT_STAR DESC
+LIMIT 10;
+'''
