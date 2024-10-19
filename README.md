@@ -46,7 +46,7 @@
 >>Text Editor: A text editor installed on your system (e.g., nano, vim).  
 
 # Enabling Performance Schema
->>Step 1: Accessing the MariaDB Configuration File.  
+# Step 1: Accessing the MariaDB Configuration File.  
 Open a Terminal: Access your terminal or command prompt.  
 
 Locate the Configuration File:
@@ -63,7 +63,7 @@ Locate the Configuration File:
 'sudo nano /etc/my.cnf'. 
 >> for Ubuntu:  
 'sudo nano /etc/mysql/my.cnf'  
->> Step 2: Editing the Configuration File
+# Step 2: Editing the Configuration File
 Find the [mysqld] Section:
 
 Scroll through the file to locate the [mysqld] section. If it does not exist, you can create it. <br>
@@ -78,7 +78,7 @@ Make sure to check if there are existing entries for performance_schema, and mod
 Save the Changes:  
 If you are using nano, press CTRL + O to save, then CTRL + X to exit.  
 If using vim, type :wq and press Enter to save and exit.  
->> Step 3: Restarting the MariaDB Service
+# Step 3: Restarting the MariaDB Service
 Restart the MariaDB Service:    
 To apply the changes, you need to restart the MariaDB service. Use the following command based on your system:
 For Ubuntu or Debian:  
