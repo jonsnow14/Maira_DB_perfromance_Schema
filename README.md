@@ -53,11 +53,11 @@ Locate the Configuration File:
 >>The main configuration file for MariaDB is typically named my.cnf or my.ini.  
 >>Common locations for the file include:
 >>Linux
-'/etc/my.cnf'.    
+`/etc/my.cnf`.    
 >>ubuntu.  
-'/etc/mysql/my.cnf'    
+`/etc/mysql/my.cnf`    
 >>Windows  
-'C:\Program Files\MariaDB\MariaDB <version>\my.ini'.     
+`C:\Program Files\MariaDB\MariaDB <version>\my.ini`.     
 >Open the Configuration File:  
 >Use a text editor to open the configuration file. For example, on a Linux system:    
 'sudo nano /etc/my.cnf'. 
