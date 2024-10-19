@@ -44,8 +44,8 @@
 > # Introduction.  
 >>The Performance Schema is a feature in MariaDB that provides insights into the performance of the database server.It collects data about query execution, wait events, and resource usage, allowing database administrators to diagnose performance issues effectively.
 > # Requirements
->>MariaDB Server: Ensure you have MariaDB version 5.5 or later installed.
->>Access: You need to have root or sufficient privileges to modify the MariaDB configuration and restart the service.
->>Text Editor: A text editor installed on your system (e.g., nano, vim).
+>>MariaDB Server: Ensure you have MariaDB version 5.5 or later installed.  
+>>Access: You need to have root or sufficient privileges to modify the MariaDB configuration and restart the service.  
+>>Text Editor: A text editor installed on your system (e.g., nano, vim).  
 
 
