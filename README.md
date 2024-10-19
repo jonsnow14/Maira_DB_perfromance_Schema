@@ -54,22 +54,22 @@ Locate the Configuration File:
 >>Common locations for the file include:
 >>Linux
 ``` linux
->>/etc/my.cnf.
+/etc/my.cnf.
 ```    
 >>ubuntu.  
 ``` linux
->>/etc/mysql/my.cnf  
+/etc/mysql/my.cnf  
 ```   
 >>Windows  
 `C:\Program Files\MariaDB\MariaDB <version>\my.ini`.     
 >Open the Configuration File:  
 >Use a text editor to open the configuration file. For example, on a Linux system:    
 ``` linux
->>sudo nano /etc/my.cnf.
+sudo nano /etc/my.cnf.
 ``` 
 >> for Ubuntu:  
 ``` linux
->> sudo nano /etc/mysql/my.cnf
+sudo nano /etc/mysql/my.cnf
 ```  
 # Step 2: Editing the Configuration File
 Find the [mysqld] Section:
