@@ -104,7 +104,5 @@ If it is enabled, you should see:
 +-------------------+-------+  
 | performance_schema | ON    |    
 +-------------------+-------+  
-Using Performance Schema  
-Once enabled, you can start using the Performance Schema to monitor various aspects of the database. You can query different tables within the performance_schema database to get insights into wait events, query performance, and more.  
 
 
