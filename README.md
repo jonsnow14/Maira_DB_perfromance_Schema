@@ -30,7 +30,7 @@
 > # Table of Contents
 >> Introduction.  
 >>Requirements.  
->>Enabling Performance Schema.
+>>Enabling Performance Schema.  
 >> Note : The performance schema cannot be activated at runtime - it must be set when the server starts by editing my.cnf configuration file.  
 >>>Step 1: Accessing the MariaDB Configuration File.  
 >>>Step 2: Editing the Configuration File.  
