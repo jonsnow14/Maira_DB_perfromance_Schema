@@ -66,43 +66,43 @@ Locate the Configuration File:
 # Step 2: Editing the Configuration File
 Find the [mysqld] Section:
 
-Scroll through the file to locate the [mysqld] section. If it does not exist, you can create it. <br>
-Add or Modify Performance Schema Settings:
+>>Scroll through the file to locate the [mysqld] section. If it does not exist, you can create it. <br>
+>>Add or Modify Performance Schema Settings:
 
-Add the following line under the [mysqld] section to enable the Performance Schema:  
-'performance_schema=ON'  
-If you want to adjust the memory allocation for the Performance Schema, you can also add:    
-'performance_schema_instrument = '%=on'
+>>Add the following line under the [mysqld] section to enable the Performance Schema:  
+>>>>'performance_schema=ON'  
+>>If you want to adjust the memory allocation for the Performance Schema, you can also add:    
+>>>>'performance_schema_instrument = '%=on'
 
-Make sure to check if there are existing entries for performance_schema, and modify them if necessary.    
-Save the Changes:  
-If you are using nano, press CTRL + O to save, then CTRL + X to exit.  
-If using vim, type :wq and press Enter to save and exit.  
+>>Make sure to check if there are existing entries for performance_schema, and modify them if necessary.    
+>>Save the Changes:  
+>>If you are using nano, press CTRL + O to save, then CTRL + X to exit.  
+>>If using vim, type :wq and press Enter to save and exit.  
 # Step 3: Restarting the MariaDB Service
-Restart the MariaDB Service:    
-To apply the changes, you need to restart the MariaDB service. Use the following command based on your system:
-For Ubuntu or Debian:  
+>>Restart the MariaDB Service:    
+>>To apply the changes, you need to restart the MariaDB service. Use the following command based on your system:
+>>For Ubuntu or Debian:  
 
-sudo systemctl restart mariadb
+>>>sudo systemctl restart mariadb
 
 
->>  Step 4: Verifying Performance Schema is Enabled
-Log in to MariaDB:  
-Access the MariaDB command-line interface:  
+# Step 4: Verifying Performance Schema is Enabled
+>>Log in to MariaDB:  
+>>Access the MariaDB command-line interface:  
 
-'mysql -u root -p'
+>>>'mysql -u root -p'
 
-Enter your root password when prompted.  
-Check Performance Schema Status:  
-Run the following SQL command to verify that the Performance Schema is enabled:  
-'SHOW VARIABLES LIKE 'performance_schema'';
+>>Enter your root password when prompted.  
+>>Check Performance Schema Status:  
+>>Run the following SQL command to verify that the Performance Schema is enabled:  
+>>>'SHOW VARIABLES LIKE 'performance_schema'';
 
-If it is enabled, you should see:
+>>If it is enabled, you should see:
 
-+-------------------+-------+  
-| Variable_name     | Value |    
-+-------------------+-------+  
-| performance_schema | ON    |    
-+-------------------+-------+  
+>>>+-------------------+-------+  
+>>>| Variable_name     | Value |    
+>>>+-------------------+-------+  
+>>>| performance_schema | ON    |    
+>>>+-------------------+-------+  
 
 
