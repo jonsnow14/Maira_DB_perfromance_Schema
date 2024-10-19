@@ -105,3 +105,5 @@ Once enabled, you can start using the Performance Schema to monitor various aspe
 For example:  
 (SELECT * FROM performance_schema.events_waits_summary_global_by_event_name)  
 
+SELECT * FROM performance_schema.events_waits_summary_global_by_event_name;
+
