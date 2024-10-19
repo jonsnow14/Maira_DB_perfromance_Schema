@@ -65,7 +65,7 @@ Locate the Configuration File:
 >Open the Configuration File:  
 >Use a text editor to open the configuration file. For example, on a Linux system:    
 ``` linux
-sudo nano /etc/my.cnf.
+sudo nano /etc/my.cnf
 ``` 
 >> for Ubuntu:  
 ``` linux
@@ -111,7 +111,9 @@ Find the [mysqld] Section:
 >>Log in to MariaDB:  
 >>Access the MariaDB command-line interface:  
 
->>>`mysql -u root -p`
+>>>``` linux
+>>>mysql -u root -p
+>>>```
 
 >>Enter your root password when prompted.  
 >>Check Performance Schema Status:  
