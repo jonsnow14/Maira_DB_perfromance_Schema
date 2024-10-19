@@ -53,16 +53,16 @@ Open a Terminal: Access your terminal or command prompt.
 The main configuration file for MariaDB is typically named my.cnf or my.ini.  
 >>Common locations for the file include:
 >>Linux
-(/etc/my.cnf).    
+'/etc/my.cnf'.    
 >>ubuntu.  
-(/etc/mysql/my.cnf)  
->>Windows
-(C:\Program Files\MariaDB\MariaDB <version>\my.ini).   
+'/etc/mysql/my.cnf'    
+>>Windows  
+'C:\Program Files\MariaDB\MariaDB <version>\my.ini'.     
 >Open the Configuration File:  
 >Use a text editor to open the configuration file. For example, on a Linux system:    
-(sudo nano /etc/my.cnf).
+'sudo nano /etc/my.cnf'. 
 >> for Ubuntu:  
-(sudo nano /etc/mysql/my.cnf)  
+'sudo nano /etc/mysql/my.cnf'  
 >> Step 2: Editing the Configuration File
 Find the [mysqld] Section:
 
@@ -70,9 +70,9 @@ Scroll through the file to locate the [mysqld] section. If it does not exist, yo
 Add or Modify Performance Schema Settings:
 
 Add the following line under the [mysqld] section to enable the Performance Schema:  
-performance_schema=ON  
+'performance_schema=ON'  
 If you want to adjust the memory allocation for the Performance Schema, you can also add:    
-performance_schema_instrument = '%=on'
+'performance_schema_instrument = '%=on'
 
 Make sure to check if there are existing entries for performance_schema, and modify them if necessary.    
 Save the Changes:  
@@ -90,12 +90,12 @@ sudo systemctl restart mariadb
 Log in to MariaDB:  
 Access the MariaDB command-line interface:  
 
-mysql -u root -p
+'mysql -u root -p'
 
 Enter your root password when prompted.  
 Check Performance Schema Status:  
 Run the following SQL command to verify that the Performance Schema is enabled:  
-SHOW VARIABLES LIKE 'performance_schema';
+'SHOW VARIABLES LIKE 'performance_schema'';
 
 If it is enabled, you should see:
 
@@ -106,7 +106,5 @@ If it is enabled, you should see:
 +-------------------+-------+
 Using Performance Schema  
 Once enabled, you can start using the Performance Schema to monitor various aspects of the database. You can query different tables within the performance_schema database to get insights into wait events, query performance, and more.  
-For example:  
 
-SELECT * FROM performance_schema.events_waits_summary_global_by_event_name;
 
