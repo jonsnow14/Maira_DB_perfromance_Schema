@@ -1,27 +1,27 @@
-Monitoring MariaDB for Competitive Programming Online Judge
-Table of Contents
-Introduction
-Requirements
-Monitoring Methods
-Performance Schema
-Information Schema
-Query Logs
-Monitoring Tools
-Server Status Variables
-Alerts and Notifications
-System Resource Monitoring
-Backup and Recovery Monitoring
-Database Profiling
-User Activity Monitoring
-Transaction Monitoring
-Replication Monitoring
-Setup Instructions
-Conclusion
-License
-Introduction
+#Monitoring MariaDB for Competitive Programming Online Judge
+#Table of Contents
+  Introduction
+  Requirements
+  Monitoring Methods
+  Performance Schema
+  Information Schema
+  Query Logs
+  Monitoring Tools
+  Server Status Variables
+  Alerts and Notifications
+  System Resource Monitoring
+  Backup and Recovery Monitoring
+  Database Profiling
+  User Activity Monitoring
+  Transaction Monitoring
+  Replication Monitoring
+  Setup Instructions
+  Conclusion
+  License
+#Introduction
 This document outlines the methods and best practices for monitoring a MariaDB database used as a backend for a competitive programming online judge. Effective monitoring is essential for ensuring the performance, reliability, and integrity of the database.
 
-Requirements
+#Requirements
 MariaDB server installed and running
 Access to the command line interface
 Appropriate permissions to access monitoring features and tools
