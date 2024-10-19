@@ -60,9 +60,9 @@ Locate the Configuration File:
 `C:\Program Files\MariaDB\MariaDB <version>\my.ini`.     
 >Open the Configuration File:  
 >Use a text editor to open the configuration file. For example, on a Linux system:    
-'sudo nano /etc/my.cnf'. 
+`sudo nano /etc/my.cnf`. 
 >> for Ubuntu:  
-'sudo nano /etc/mysql/my.cnf'  
+`sudo nano /etc/mysql/my.cnf`  
 # Step 2: Editing the Configuration File
 Find the [mysqld] Section:
 
@@ -70,17 +70,17 @@ Find the [mysqld] Section:
 >>Add or Modify Performance Schema Settings:
 
 >>Add the following line under the [mysqld] section to enable the Performance Schema:  
->>>>'performance_schema=ON'  
+>>>>`performance_schema=ON`  
 >>If you want to adjust the memory allocation for the Performance Schema, you can also add:    
->>>>'performance_schema_instrument = '%=on'  
+>>>>`performance_schema_instrument = '%=on`  
 >>enables all instrumentation of all stages (computation units) in MariaDB:  
-'''  
+```  sql
 >>>>performance_schema=ON  
 >>>>performance-schema-instrument='stage/%=ON'  
 >>>>performance-schema-consumer-events-stages-current=ON  
 >>>>performance-schema-consumer-events-stages-history=ON  
 >>>>performance-schema-consumer-events-stages-history-long=ON
-'''   
+```   
 >>Make sure to check if there are existing entries for performance_schema, and modify them if necessary.    
 >>Save the Changes:  
 >>If you are using nano, press CTRL + O to save, then CTRL + X to exit.  
@@ -97,12 +97,12 @@ Find the [mysqld] Section:
 >>Log in to MariaDB:  
 >>Access the MariaDB command-line interface:  
 
->>>'mysql -u root -p'
+>>>`mysql -u root -p`
 
 >>Enter your root password when prompted.  
 >>Check Performance Schema Status:  
 >>Run the following SQL command to verify that the Performance Schema is enabled:  
->>>'SHOW VARIABLES LIKE 'performance_schema'';
+>>>`SHOW VARIABLES LIKE 'performance_schema'`;
 
 >>If it is enabled, you should see:
 
