@@ -1,1 +1,9 @@
+--Enabling Slow Query Logs
+   'SET GLOBAL slow_query_log=1;'
+--configuring slow query log filename 
+--default : written to ${hostname}-slow.log int he datadir directory
+--change dynamically 
+  'SET GLOBAL slow_query_log_file='mariadb-slow.log''
 
+--writing slow query logs to table 
+  'SET GLOBAL log_output='TABLE''
