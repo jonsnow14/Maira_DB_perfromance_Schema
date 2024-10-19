@@ -94,7 +94,9 @@ Find the [mysqld] Section:
 >>To apply the changes, you need to restart the MariaDB service. Use the following command based on your system:
 >>For Ubuntu or Debian:  
 
+>>>``` linux  
 >>>sudo systemctl restart mariadb
+>>>```
 
 
 # Step 4: Verifying Performance Schema is Enabled
@@ -106,7 +108,9 @@ Find the [mysqld] Section:
 >>Enter your root password when prompted.  
 >>Check Performance Schema Status:  
 >>Run the following SQL command to verify that the Performance Schema is enabled:  
->>>`SHOW VARIABLES LIKE 'performance_schema'`;
+>>>``` sql
+>>>SHOW VARIABLES LIKE 'performance_schema'
+>>>```
 
 >>If it is enabled, you should see:
 
