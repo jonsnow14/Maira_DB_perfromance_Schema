@@ -73,7 +73,13 @@ Find the [mysqld] Section:
 >>>>'performance_schema=ON'  
 >>If you want to adjust the memory allocation for the Performance Schema, you can also add:    
 >>>>'performance_schema_instrument = '%=on'
-
+>>enables all instrumentation of all stages (computation units) in MariaDB:  
+'''
+>>>>performance_schema=ON
+>>>>performance-schema-instrument='stage/%=ON'
+>>>>performance-schema-consumer-events-stages-current=ON
+>>>>performance-schema-consumer-events-stages-history=ON
+>>>>performance-schema-consumer-events-stages-history-long=ON
 >>Make sure to check if there are existing entries for performance_schema, and modify them if necessary.    
 >>Save the Changes:  
 >>If you are using nano, press CTRL + O to save, then CTRL + X to exit.  
