@@ -70,7 +70,7 @@ Find the [mysqld] Section:
 >>Add or Modify Performance Schema Settings:
 
 >>Add the following line under the [mysqld] section to enable the Performance Schema:  
->>>>`performance_schema=ON`  
+>>>>`sql performance_schema=ON`  
 >>If you want to adjust the memory allocation for the Performance Schema, you can also add:    
 >>>>`performance_schema_instrument = '%=on`  
 >>enables all instrumentation of all stages (computation units) in MariaDB:  
