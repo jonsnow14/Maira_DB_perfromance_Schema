@@ -82,3 +82,16 @@ Key Features: Track active transactions and wait times.
 Replication Monitoring
 Description: Monitor the replication status if using replication.
 Key Features: Check replication lag and status of replication threads.
+
+
+# Enabling Performance Schema in MariaDB
+> # Table of Contents
+>> Introduction
+>>Requirements
+>>Enabling Performance Schema
+>>>Step 1: Accessing the MariaDB Configuration File
+>>>Step 2: Editing the Configuration File
+>>>Step 3: Restarting the MariaDB Service
+>>>Step 4: Verifying Performance Schema is Enabled
+>>>Using Performance Schema
+>>>Conclusion
