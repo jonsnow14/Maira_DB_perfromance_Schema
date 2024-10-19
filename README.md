@@ -49,9 +49,8 @@
 >>Step 1: Accessing the MariaDB Configuration File.  
 Open a Terminal: Access your terminal or command prompt.  
 
-# Locate the Configuration File:
-
-The main configuration file for MariaDB is typically named my.cnf or my.ini.  
+Locate the Configuration File:
+>>The main configuration file for MariaDB is typically named my.cnf or my.ini.  
 >>Common locations for the file include:
 >>Linux
 '/etc/my.cnf'.    
